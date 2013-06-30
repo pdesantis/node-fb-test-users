@@ -1,0 +1,29 @@
+{
+  "name": "node-fb-test-users",
+  "description": "A utility to create, read, update, and delete Facebook test users for your Facebook application",
+  "main": "./lib/fb-test-users",
+  "version": "0.0.1",
+  "author": "Pat DeSantis <pdesantis3@gmail.com>",
+  "dependencies": {
+    "request": "2.21.0"
+  },
+  "devDependencies": {
+    "mocha": "1.11.0",
+    "should": "1.2.2",
+    "sinon": "1.7.3",
+    "supertest": "0.7.0"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "keywords": [
+    "facebook",
+    "fb",
+    "test",
+    "tests",
+    "testing",
+    "users"
+  ],
+  "repository": "https://github.com/pdesantis/node-fb-test-users",
+  "license": "MIT"
+}
