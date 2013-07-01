@@ -52,7 +52,7 @@ Creates a new test user on Facebook.
 
 ```javascript
 fbTestUsers.create({}, function(error, result){
-console.log(result);
+  console.log(result);
 });
 ```
 
@@ -73,7 +73,7 @@ Fetch an array of all test users associated with this app.
 
 ```javascript
 fbTestUsers.list(function(error, users){
-console.log(users);
+  console.log(users);
 });
 ```
 
@@ -97,7 +97,7 @@ Update a test user's name and/or password.
 
 ```javascript
 fbTestUsers.update('100006249401765', {name: 'Testy McCool', password: 'nottest'}, function(error, success){
-console.log(success);
+  console.log(success);
 });
 ```
 
@@ -119,7 +119,7 @@ Delete a test user.
 
 ```javascript
 fbTestUsers.delete('100006249401765', function(error, success){
-console.log(success);
+  console.log(success);
 });
 ```
 
