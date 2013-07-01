@@ -1,5 +1,5 @@
 {
-  "name": "node-fb-test-users",
+  "name": "fb-test-users",
   "description": "A utility to create, read, update, and delete Facebook test users for your Facebook application",
   "main": "./lib/fb-test-users",
   "version": "0.0.1",
