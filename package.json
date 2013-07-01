@@ -14,7 +14,7 @@
     "supertest": "0.7.0"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "make test"
   },
   "keywords": [
     "facebook",
