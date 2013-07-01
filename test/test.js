@@ -129,13 +129,33 @@ describe('FBTestUsers', function(){
       });
     });
 
-    it('Should callback with a user object', function(done){
+    it('Should default to creating 1 user when no args.limit is specified', function(done){
       fbTestUsers.create({}, function(error, users){
         if(error) return done(error);
         users.should.be.an.instanceof(Object);
+        users.should.not.be.an.instanceof(Array);
         done();
       });
     });
+
+    it('Should callback with a user object when only one user is created', function(done){
+      fbTestUsers.create({}, function(error, users){
+        if(error) return done(error);
+        users.should.be.an.instanceof(Object);
+        users.should.not.be.an.instanceof(Array);
+        done();
+      });
+    });
+
+    it('Should callback with an array of user objects when args.limit > 1', function(done){
+      var args = {limit: 2};
+      fbTestUsers.create(args, function(error, users){
+        if(error) return done(error);
+        users.should.be.an.instanceof(Array);
+        users.length.should.equal(2);
+        done();
+      });
+    });    
   });
 
   describe("#update", function(){

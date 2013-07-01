@@ -1,4 +1,4 @@
-MOCHA_OPTS= --check-leaks -t 4000
+MOCHA_OPTS= --check-leaks -t 8000
 REPORTER = dot
 
 test:
