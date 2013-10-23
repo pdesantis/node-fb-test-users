@@ -2,7 +2,7 @@
   "name": "fb-test-users",
   "description": "A utility to create, read, update, and delete Facebook test users for your Facebook application",
   "main": "./lib/fb-test-users",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "author": "Pat DeSantis <pdesantis3@gmail.com>",
   "dependencies": {
     "async": "0.2.9",
