@@ -43,7 +43,9 @@ Creates a new test user on Facebook.
 
 **Arguments**
 
-* *args.amount* - The number of users to create. Optional, defaults to 1.
+* *args.limit* - The number of users to create. Optional, defaults to 1.
+* *args.installed* - Set the user's 'installed' parameter. Optional, defaults to *true*.
+* *args.permissions* - Set the user's xw'permissions' parameter. Optional, defaults to *'read_stream'*.
 * **callback(error, result)** - The callback which is called after the user(s) are created, or an error occurred.
   * *error* - Error object
   * *user* - Array of user objects
