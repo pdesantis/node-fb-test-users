@@ -67,6 +67,8 @@ Fetch an array of all test users associated with this app.
 
 **Arguments**
 
+* **limit - The numbers of users returned - default value is 50
+
 * **callback(error, users)** - The callback which is called after the users have been fetched, or an error occurred.
   * *error* - Error object
   * *user* - Array of user objects
@@ -75,6 +77,14 @@ Fetch an array of all test users associated with this app.
 
 ```javascript
 fbTestUsers.list(function(error, users){
+  console.log(users);
+});
+```
+
+**Example with limit, get 100 users**
+
+```javascript
+fbTestUsers.list(100, function(error, users){
   console.log(users);
 });
 ```
